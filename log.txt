@@ -1,0 +1,111 @@
+ml (took 8 ms)
+2023-05-04 18:52:13 [debug    / 151kB] > parsed template: header.html (took 124 ms)
+2023-05-04 18:52:13 [debug    / 147kB] > parsed template: login.html (took 272 ms)
+2023-05-04 18:52:13 [info     / 145kB] > GET /login (200 OK) [521ms]
+2023-05-04 18:52:19 [debug    / 161kB] > parsed template: footer.html (took 11 ms)
+2023-05-04 18:52:19 [debug    / 159kB] > parsed template: index.html (took 107 ms)
+2023-05-04 18:52:19 [info     / 157kB] > POST /login (200 OK) [231ms]
+2023-05-04 18:52:22 [debug    / 140kB] > parsed template: nav.html (took 8 ms)
+2023-05-04 18:52:22 [debug    / 138kB] > parsed template: header.html (took 103 ms)
+2023-05-04 18:52:22 [debug    / 134kB] > parsed template: login.html (took 202 ms)
+2023-05-04 18:52:22 [info     / 132kB] > GET /login (200 OK) [319ms]
+2023-05-04 18:52:26 [debug    / 157kB] > parsed template: footer.html (took 5 ms)
+2023-05-04 18:52:26 [debug    / 155kB] > parsed template: index.html (took 105 ms)
+2023-05-04 18:52:26 [info     / 153kB] > POST /login (200 OK) [238ms]
+2023-05-04 18:52:42 [debug    / 136kB] > parsed template: nav.html (took 8 ms)
+2023-05-04 18:52:42 [debug    / 134kB] > parsed template: header.html (took 107 ms)
+2023-05-04 18:52:42 [debug    / 155kB] > parsed template: login.html (took 266 ms)
+2023-05-04 18:52:42 [info     / 153kB] > GET /login (200 OK) [388ms]
+2023-05-04 18:52:59 [debug    / 162kB]   - got ip address
+2023-05-04 18:52:59 [info     / 159kB] Started Webserver on IP-Address:  192.168.1.200
+2023-05-04 18:52:59 [info     / 157kB] > starting web server on port 80
+2023-05-04 18:53:07 [debug    / 141kB] > parsed template: footer.html (took 5 ms)
+2023-05-04 18:53:07 [debug    / 159kB] > parsed template: index.html (took 116 ms)
+2023-05-04 18:53:07 [info     / 157kB] > POST /login (200 OK) [505ms]
+2023-05-04 18:53:42 [debug    / 166kB]   - got ip address
+2023-05-04 18:53:42 [info     / 164kB] Started Webserver on IP-Address:  192.168.1.200
+2023-05-04 18:53:42 [info     / 162kB] > starting web server on port 80
+2023-05-04 18:53:43 [debug    / 143kB] > parsed template: nav.html (took 7 ms)
+2023-05-04 18:53:43 [debug    / 141kB] > parsed template: header.html (took 108 ms)
+2023-05-04 18:53:43 [debug    / 136kB] > parsed template: login.html (took 211 ms)
+2023-05-04 18:53:43 [info     / 134kB] > GET /login (200 OK) [457ms]
+2023-05-04 18:53:49 [debug    / 143kB] > parsed template: footer.html (took 4 ms)
+2023-05-04 18:53:49 [debug    / 141kB] > parsed template: index.html (took 118 ms)
+2023-05-04 18:53:49 [info     / 139kB] > POST /login (200 OK) [347ms]
+2023-05-04 18:55:24 [debug    / 160kB]   - got ip address
+2023-05-04 18:55:24 [info     / 158kB] Started Webserver on IP-Address:  192.168.1.200
+2023-05-04 18:55:24 [info     / 156kB] > starting web server on port 80
+2023-05-04 18:55:28 [debug    / 153kB] > parsed template: nav.html (took 9 ms)
+2023-05-04 18:55:28 [debug    / 151kB] > parsed template: header.html (took 114 ms)
+2023-05-04 18:55:28 [debug    / 145kB] > parsed template: footer.html (took 5 ms)
+2023-05-04 18:55:28 [debug    / 143kB] > parsed template: index.html (took 333 ms)
+2023-05-04 18:55:28 [info     / 141kB] > POST /login (200 OK) [477ms]
+2023-05-04 18:55:33 [error    / 154kB] need more than 0 values to unpack
+2023-05-04 19:00:56 [debug    / 137kB] > parsed template: nav.html (took 7 ms)
+2023-05-04 19:00:56 [debug    / 135kB] > parsed template: header.html (took 113 ms)
+2023-05-04 19:00:56 [debug    / 131kB] > parsed template: footer.html (took 5 ms)
+2023-05-04 19:00:56 [debug    / 129kB] > parsed template: index.html (took 327 ms)
+2023-05-04 19:00:56 [info     / 127kB] > GET / (200 OK) [455ms]
+2023-05-04 19:00:58 [debug    / 149kB] > parsed template: nav.html (took 8 ms)
+2023-05-04 19:00:58 [debug    / 147kB] > parsed template: header.html (took 117 ms)
+2023-05-04 19:00:58 [debug    / 143kB] > parsed template: footer.html (took 5 ms)
+2023-05-04 19:00:58 [debug    / 141kB] > parsed template: about.html (took 340 ms)
+2023-05-04 19:00:59 [info     / 139kB] > GET /about (200 OK) [478ms]
+2023-05-04 19:01:55 [debug    / 160kB]   - got ip address
+2023-05-04 19:01:55 [info     / 158kB] Started Webserver on IP-Address:  192.168.1.200
+2023-05-04 19:01:55 [info     / 156kB] > starting web server on port 80
+2023-05-04 19:02:00 [debug    / 150kB] > parsed template: nav.html (took 8 ms)
+2023-05-04 19:02:00 [debug    / 147kB] > parsed template: header.html (took 101 ms)
+2023-05-04 19:02:00 [debug    / 143kB] > parsed template: footer.html (took 4 ms)
+2023-05-04 19:02:00 [debug    / 141kB] > parsed template: about.html (took 281 ms)
+2023-05-04 19:02:00 [info     / 139kB] > GET /about (200 OK) [399ms]
+2023-05-04 19:02:02 [debug    / 150kB] > parsed template: nav.html (took 9 ms)
+2023-05-04 19:02:02 [debug    / 148kB] > parsed template: header.html (took 103 ms)
+2023-05-04 19:02:02 [debug    / 144kB] > parsed template: login.html (took 206 ms)
+2023-05-04 19:02:02 [info     / 142kB] > GET /login (200 OK) [2798ms]
+2023-05-04 19:02:08 [debug    / 143kB] > parsed template: nav.html (took 15 ms)
+2023-05-04 19:02:08 [debug    / 141kB] > parsed template: header.html (took 112 ms)
+2023-05-04 19:02:08 [debug    / 136kB] > parsed template: footer.html (took 5 ms)
+2023-05-04 19:02:08 [debug    / 134kB] > parsed template: index.html (took 308 ms)
+2023-05-04 19:02:08 [info     / 132kB] > POST /login (200 OK) [689ms]
+2023-05-04 19:02:22 [debug    / 116kB] > parsed template: nav.html (took 7 ms)
+2023-05-04 19:02:22 [debug    / 113kB] > parsed template: header.html (took 105 ms)
+2023-05-04 19:02:22 [debug    / 142kB] > parsed template: footer.html (took 5 ms)
+2023-05-04 19:02:22 [debug    / 140kB] > parsed template: about.html (took 316 ms)
+2023-05-04 19:02:22 [info     / 138kB] > GET /about (200 OK) [482ms]
+2023-05-04 20:28:42 [debug    / 122kB] > parsed template: nav.html (took 8 ms)
+2023-05-04 20:28:42 [debug    / 120kB] > parsed template: header.html (took 114 ms)
+2023-05-04 20:28:42 [debug    / 115kB] > parsed template: footer.html (took 5 ms)
+2023-05-04 20:28:42 [debug    / 113kB] > parsed template: index.html (took 364 ms)
+2023-05-04 20:28:42 [info     / 111kB] > GET / (200 OK) [751ms]
+2023-05-04 20:28:42 [info     / 148kB] > GET /favicon.ico (404 Not Found) [1026ms]
+2023-05-04 20:29:01 [debug    / 132kB] > parsed template: nav.html (took 7 ms)
+2023-05-04 20:29:01 [debug    / 129kB] > parsed template: header.html (took 107 ms)
+2023-05-04 20:29:01 [debug    / 125kB] > parsed template: footer.html (took 5 ms)
+2023-05-04 20:29:01 [debug    / 123kB] > parsed template: about.html (took 312 ms)
+2023-05-04 20:29:01 [info     / 121kB] > GET /about (200 OK) [447ms]
+2023-05-04 20:29:05 [debug    / 140kB] > parsed template: nav.html (took 9 ms)
+2023-05-04 20:29:05 [debug    / 138kB] > parsed template: header.html (took 120 ms)
+2023-05-04 20:29:05 [debug    / 120kB] > parsed template: nav.html (took 8 ms)
+2023-05-04 20:29:05 [debug    / 118kB] > parsed template: header.html (took 110 ms)
+2023-05-04 20:29:05 [debug    / 145kB] > parsed template: login.html (took 279 ms)
+2023-05-04 20:29:05 [info     / 143kB] > GET /login (200 OK) [503ms]
+2023-05-04 20:29:18 [debug    / 126kB] > parsed template: nav.html (took 8 ms)
+2023-05-04 20:29:18 [debug    / 110kB] > parsed template: header.html (took 234 ms)
+2023-05-04 20:29:18 [debug    / 143kB] > parsed template: footer.html (took 5 ms)
+2023-05-04 20:29:18 [debug    / 141kB] > parsed template: index.html (took 458 ms)
+2023-05-04 20:29:18 [info     / 139kB] > POST /login (200 OK) [13719ms]
+2023-05-04 20:29:22 [debug    / 122kB] > parsed template: nav.html (took 8 ms)
+2023-05-04 20:29:22 [debug    / 120kB] > parsed template: header.html (took 119 ms)
+2023-05-04 20:29:22 [debug    / 116kB] > parsed template: login.html (took 283 ms)
+2023-05-04 20:29:22 [info     / 114kB] > GET /login (200 OK) [666ms]
+2023-05-04 20:29:31 [debug    / 137kB] > parsed template: nav.html (took 8 ms)
+2023-05-04 20:29:31 [debug    / 135kB] > parsed template: header.html (took 117 ms)
+2023-05-04 20:29:31 [debug    / 130kB] > parsed template: footer.html (took 5 ms)
+2023-05-04 20:29:31 [debug    / 128kB] > parsed template: index.html (took 335 ms)
+2023-05-04 20:29:31 [info     / 126kB] > POST /login (200 OK) [9885ms]
+2023-05-04 20:49:27 [debug    / 141kB] > parsed template: nav.html (took 8 ms)
+2023-05-04 20:49:27 [debug    / 139kB] > parsed template: header.html (took 101 ms)
+2023-05-04 20:49:27 [debug    / 134kB] > parsed template: footer.html (took 5 ms)
+2023-05-04 20:49:27 [debug    / 132kB] > parsed template: index.html (took 299 ms)
+2023-05-04 20:49:27 [info     / 130kB] > POST /login (200 OK) [1722ms]
