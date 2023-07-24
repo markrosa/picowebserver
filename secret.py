@@ -1,2 +1,2 @@
-ssid="FritzBoxMR"
-password="anna2203lara2901"
+ssid="KHG_Workshop_RaspiPico"
+password=""
