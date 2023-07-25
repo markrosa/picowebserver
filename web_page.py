@@ -31,12 +31,66 @@ def index(request):
     led.off()
     return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
 
-@server.route("/lauflicht")
+@server.route("/blinker")
 def index(request):
-    # Lauflicht
-    mode_text = "Lauflicht"
+    mode_text = "Blinker"
+    blinker()
+    return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
+
+@server.route("/audi_blinker")
+def index(request):
+    mode_text = "Audi Blinker"
     audi_blinker()
     return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
+
+@server.route("/audi_blinker2")
+def index(request):
+    mode_text = "Audi Blinker 2"
+    audi_blinker2()
+    return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
+
+@server.route("/audi_blinker3")
+def index(request):
+    mode_text = "Audi Blinker 3"
+    audi_blinker2()
+    return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
+
+@server.route("/vierfarben_audiblinker")
+def index(request):
+    mode_text = "4-farbiger Audi Blinker"
+    audi_blinker2()
+    return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
+
+@server.route("/all_colors")
+def index(request):
+    mode_text = "Alle Farben"
+    all_colors(5, 25, (red, orange, yellow, green, blue, indigo, violet))
+    return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
+
+@server.route("/rotate_right")
+def index(request):
+    mode_text = "Rotieren nach rechts"
+    rotate_right(10, 20, blue, red)
+    return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
+
+@server.route("/move_right_left")
+def index(request):
+    mode_text = "rechts links bewegen"
+    move_right_left(12, 18, blue, red)
+    return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
+
+@server.route("/gradient_bounce")
+def index(request):
+    mode_text = "Farbverlaufs-Wippe"
+    gradient_bounce(30, 7, red, blue)
+    return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
+
+@server.route("/one_pixel")
+def index(request):
+    mode_text = "ein pixel"
+    one_pixel(10, 20)
+    return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
+
 
 
 @server.route("/about")
