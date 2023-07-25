@@ -31,7 +31,7 @@ def all_colors(start, stop, colors):
     # setze i auf 0; i wird unser Durchlaufzähler
     ####i = 0
     # führe den Farbwechsel genau 100 Mal durch
-    for i in range(100):
+    for i in range(60):
     # Beginn der unendlichen Schleife
     ####while True:
         # Berechnung des Farbindex (= Position in der übergebenen Farbliste)
@@ -57,18 +57,21 @@ def all_colors(start, stop, colors):
             # setze ihn wieder auf 0
             if col_index == len(colors):
                 col_index = 0
+    pixels.clear()
+    pixels.show()
 
-#
+
 def rotate_right(start, stop, start_color, stop_color):
     # mache alle LEDs dunkel
     pixels.clear()
     
     pixels.set_pixel_line_gradient(start, stop, start_color, stop_color)
-    for i in range(210):
+    for i in range(60):
         pixels.rotate_right(1)
         pixels.show()
         time.sleep(0.05)
     
+    pixels.clear()
     pixels.show()
     #time.sleep(3)
 
@@ -91,7 +94,7 @@ def move_right_left(start, stop, start_color, stop_color):
     # führe die folgende Schleife aus,
     # solange der Wert für i zwischen 0 und kleiner als 20 ist
     # i wird dabei automatisch am Ende von jedem Durchlauf um 1 erhöht
-    for i in range(0, 20):
+    for i in range(0, 12):
         # wenn forward == True, wir also in einem Vorwärtslauf sind ...
         if forward:
             # wir berechnen, wieviele Lauflichtschritte vom letzten aktiven LED
@@ -135,6 +138,8 @@ def move_right_left(start, stop, start_color, stop_color):
         forward = not forward
     # wir warten 3 Sekunden; TODO: warum???
     ##time.sleep(3)
+    pixels.clear()
+    pixels.show()
     
 # Lauflicht, bei dem eine Reihe von aktiven LEDs, die einen Farbverlauf anzeigen
 # erst immer weiter in Richtung Ende der LED-Kette verschoben werden, und wenn sie
@@ -166,7 +171,7 @@ def gradient_bounce(length_chain, length_gradient, start_color, stop_color):
     # führe die folgende Schleife aus,
     # solange der Wert für i zwischen 0 und kleiner als 20 ist
     # i wird dabei automatisch am Ende von jedem Durchlauf um 1 erhöht
-    for i in range(0, 20):
+    for i in range(0, 8):
         # wenn forward == True, wir also in einem Vorwärtslauf sind ...
         if forward:
             # wir berechnen, wieviele Lauflichtschritte vom letzten aktiven LED
@@ -210,6 +215,8 @@ def gradient_bounce(length_chain, length_gradient, start_color, stop_color):
         forward = not forward
     # wir warten 3 Sekunden; TODO: warum???
     ##time.sleep(3)
+    pixels.clear()
+    pixels.show()
 
 
 # Lauflicht mit einzelnem Pixel und Farbänderung durch den gesamten Farbraum
@@ -261,6 +268,8 @@ def one_pixel(start, stop):
             else:
                 # erhöhe den Farbwert um 5000
                 color_value += 5000;
+    pixels.clear()
+    pixels.show()
         
 def audi_blinker():
     pixels.clear()
