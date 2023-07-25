@@ -147,7 +147,7 @@ def gradient_bounce(length_chain, length_gradient, start_color, stop_color):
     first = 0
     last = length_gradient
 
-    print('length: ', pixels.num_leds)
+    #print('length: ', pixels.num_leds)
 
     # prüfe, ob length_chain kleiner ist als length_gradient und setze den Wert
     # in diesem Fall auf length_gradient x 2
@@ -231,7 +231,7 @@ def one_pixel(start, stop):
     # der "Farbwert" für eine dunkle/schwarze LED wird definiert
     black_color = pixels.colorHSV(0, 0, 0)
     # Beginn der unendlichen Schleife
-    while True:
+    for i in range(0,100):
         # aktueller Farbwert wird definiert (mit dem aktuellen "color_value",
         # welcher beim ersten Durchlauf auf 100 steht (siehe oben)
         color = pixels.colorHSV(color_value, 255, 255) # Farbe, Sättigung, Helligkeit
@@ -264,66 +264,82 @@ def one_pixel(start, stop):
         
 def audi_blinker():
     pixels.clear()
-    for pos in range(0,15,1):
-        pixels.set_pixel(pos, yellow)
-        pixels.set_pixel(29-pos, yellow)
+    for j in range(0,3):  
+        for pos in range(0,15,1):
+            pixels.set_pixel(pos, yellow)
+            pixels.set_pixel(29-pos, yellow)
+            pixels.show()
+            time.sleep(0.05)
+        pixels.clear()
         pixels.show()
-        time.sleep(0.1)
 
 def audi_blinker2():
     pixels.clear()
-    for pos in range(0,15,1):
-        pixels.set_pixel(pos, other_color)
-        pixels.set_pixel(29-pos, other_color)
+    for j in range(0,3):
+        for pos in range(0,15,1):
+            pixels.set_pixel(pos, other_color)
+            pixels.set_pixel(29-pos, other_color)
+            pixels.show()
+            time.sleep(0.05)
+        pixels.clear()
         pixels.show()
-        time.sleep(0.3)
+    
         
 def vierfarben_audiblinker():
     pixels.clear()
-    for pos in range (0,8,1):
-        pixels.set_pixel(7-pos, blue)
-        pixels.set_pixel(29-pos,yellow)
-        pixels.set_pixel(14-pos,green)
-        pixels.set_pixel(21-pos,red) 
+    for j in range(0,5):
+        for pos in range (0,8,1):
+            pixels.set_pixel(7-pos, blue)
+            pixels.set_pixel(29-pos,yellow)
+            pixels.set_pixel(14-pos,green)
+            pixels.set_pixel(21-pos,red) 
+            pixels.show()
+            time.sleep(0.06)
+        pixels.clear()
         pixels.show()
-        time.sleep(0.06)
 
 def audi_blinker3():
     pixels.clear()
     pixels.show()
-    time.sleep(0.4)
-    for pos in range(0, 16):
-        pixels.set_pixel(pos, orange)
-        pixels.set_pixel(29-pos, orange)
+    for j in range(0,3):
+        time.sleep(0.4)
+        for pos in range(0, 16):
+            pixels.set_pixel(pos, orange)
+            pixels.set_pixel(29-pos, orange)
+            pixels.show()
+            time.sleep(0.02)
+        time.sleep(0.2)
+        pixels.clear()
         pixels.show()
-        time.sleep(0.02)
-    time.sleep(0.2)
-    pixels.clear()
-    pixels.show()
-    time.sleep(0.2)
-    for i in range(0, 30):
-       pixels.set_pixel(i, orange)
-       pixels.show()
-    time.sleep(0.05)
+        time.sleep(0.2)
+        for i in range(0, 30):
+           pixels.set_pixel(i, orange)
+           pixels.show()
+        time.sleep(0.05)
+        pixels.clear()
+        pixels.show()
 
 def blinker():
     pixels.clear()
     pixels.show()
-    time.sleep(0.4)
-    for pos in range(0, 16):
-        pixels.set_pixel(pos, alternative_pink)
-        pixels.set_pixel(29-pos, alternative_pink)
+    for j in range(0,3):
+        time.sleep(0.4)
+        for pos in range(0, 16):
+            pixels.set_pixel(pos, alternative_pink)
+            pixels.set_pixel(29-pos, alternative_pink)
+            pixels.show()
+            time.sleep(0.02)
+        time.sleep(0.2)
+        pixels.clear()
         pixels.show()
-        time.sleep(0.02)
-    time.sleep(0.2)
-    pixels.clear()
-    pixels.show()
-    time.sleep(0.2)
-    for i in range(0, 30):
-       pixels.set_pixel(i, alternative_pink)
-       pixels.show()
-    time.sleep(0.01)
-       
+        time.sleep(0.2)
+        for i in range(0, 30):
+           pixels.set_pixel(i, alternative_pink)
+           pixels.show()
+        time.sleep(0.01)
+        pixels.clear()
+        pixels.show()
+      
         
 
 # all_colors(5, 25, (red, orange, yellow, green, blue, indigo, violet))

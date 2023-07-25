@@ -2,8 +2,8 @@ from phew import logging, server, connect_to_wifi
 from phew.template import render_template
 from secret import ssid, password
 from machine import Pin
-from examples import audi_blinker
-from html_page import html_page
+from examples import blinker, audi_blinker, audi_blinker2, audi_blinker3, vierfarben_audiblinker, all_colors, rotate_right, move_right_left, gradient_bounce, one_pixel
+from examples import red, orange, yellow, green, blue, indigo, violet, pink, dark_pink, alternative_pink, other_color
 
 my_ip = connect_to_wifi(ssid, password)
 
@@ -52,13 +52,13 @@ def index(request):
 @server.route("/audi_blinker3")
 def index(request):
     mode_text = "Audi Blinker 3"
-    audi_blinker2()
+    audi_blinker3()
     return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
 
 @server.route("/vierfarben_audiblinker")
 def index(request):
     mode_text = "4-farbiger Audi Blinker"
-    audi_blinker2()
+    vierfarben_audiblinker()
     return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
 
 @server.route("/all_colors")
