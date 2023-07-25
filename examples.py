@@ -12,6 +12,10 @@ green = (0, 255, 0)
 blue = (0, 0, 255)
 indigo = (100, 0, 90)
 violet = (200, 0, 100)
+pink = (210, 100, 100)
+dark_pink = (150, 80, 80)
+alternative_pink = (255, 0, 100)
+other_color = (255, 50, 0)
 
 # Initialisierung
 pixels.brightness(20)
@@ -66,7 +70,7 @@ def rotate_right(start, stop, start_color, stop_color):
         time.sleep(0.05)
     
     pixels.show()
-    time.sleep(3)
+    #time.sleep(3)
 
 # Lauflicht, bei dem eine Reihe von aktiven LEDs, die einen Farbverlauf anzeigen
 # erst immer weiter in Richtung Ende der LED-Kette verschoben werden, und wenn sie
@@ -130,7 +134,7 @@ def move_right_left(start, stop, start_color, stop_color):
         # wenn er auf False stand ist er jetzt True
         forward = not forward
     # wir warten 3 Sekunden; TODO: warum???
-    time.sleep(3)
+    ##time.sleep(3)
     
 # Lauflicht, bei dem eine Reihe von aktiven LEDs, die einen Farbverlauf anzeigen
 # erst immer weiter in Richtung Ende der LED-Kette verschoben werden, und wenn sie
@@ -264,12 +268,61 @@ def audi_blinker():
         pixels.set_pixel(pos, yellow)
         pixels.set_pixel(29-pos, yellow)
         pixels.show()
-        time.sleep(0.05)
+        time.sleep(0.1)
+
+def audi_blinker2():
+    pixels.clear()
+    for pos in range(0,15,1):
+        pixels.set_pixel(pos, other_color)
+        pixels.set_pixel(29-pos, other_color)
+        pixels.show()
+        time.sleep(0.3)
         
-    time.sleep(1)
+def vierfarben_audiblinker():
+    pixels.clear()
+    for pos in range (0,8,1):
+        pixels.set_pixel(7-pos, blue)
+        pixels.set_pixel(29-pos,yellow)
+        pixels.set_pixel(14-pos,green)
+        pixels.set_pixel(21-pos,red) 
+        pixels.show()
+        time.sleep(0.06)
+
+def audi_blinker3():
     pixels.clear()
     pixels.show()
+    time.sleep(0.4)
+    for pos in range(0, 16):
+        pixels.set_pixel(pos, orange)
+        pixels.set_pixel(29-pos, orange)
+        pixels.show()
+        time.sleep(0.02)
+    time.sleep(0.2)
+    pixels.clear()
+    pixels.show()
+    time.sleep(0.2)
+    for i in range(0, 30):
+       pixels.set_pixel(i, orange)
+       pixels.show()
+    time.sleep(0.05)
 
+def blinker():
+    pixels.clear()
+    pixels.show()
+    time.sleep(0.4)
+    for pos in range(0, 16):
+        pixels.set_pixel(pos, alternative_pink)
+        pixels.set_pixel(29-pos, alternative_pink)
+        pixels.show()
+        time.sleep(0.02)
+    time.sleep(0.2)
+    pixels.clear()
+    pixels.show()
+    time.sleep(0.2)
+    for i in range(0, 30):
+       pixels.set_pixel(i, alternative_pink)
+       pixels.show()
+    time.sleep(0.01)
        
         
 
