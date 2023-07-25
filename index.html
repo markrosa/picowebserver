@@ -3,36 +3,39 @@
     <div class="container bg-light rounded m-3 p-3">
         <h1 class="display-5">KHG-Workshop 2023: LED-Lichterketten mit Raspberry Pico</h1>
 
-        <p>Click the buttons to control the LED</p>
-        <input type="button" onclick="document.location='/ledon'" value="TURN LED ON"/>
-        <p></p>
-        <input type="button" onclick="document.location='/ledoff'" value="TURN LED OFF"/>
-        <p></p>
-        <p></p>
-        <input type="button" onclick="document.location='/blinker'" value="Blinker"/>
-        <p></p>
-        <input type="button" onclick="document.location='/audi_blinker'" value="Audi Blinker"/>
-        <p></p>
-        <input type="button" onclick="document.location='/audi_blinker2'" value="Audi Blinker 2"/>
-        <p></p>
-        <input type="button" onclick="document.location='/audi_blinker3'" value="Audi Blinker 3"/>
-        <p></p>
-        <input type="button" onclick="document.location='/vierfarben_audiblinker'" value="4-farbiger Audi Blinker"/>
-        <p></p>
-        <p></p>
-        <input type="button" onclick="document.location='/all_colors'" value="Alle Farben"/>
-        <p></p>
-        <input type="button" onclick="document.location='/rotate_right'" value="Rotieren nach rechts"/>
-        <p></p>
-        <input type="button" onclick="document.location='/move_right_left'" value="rechts links bewegen"/>
-        <p></p>
-        <input type="button" onclick="document.location='/gradient_bounce'" value="Farbverlaufs-Wippe"/>
-        <p></p>
-        <input type="button" onclick="document.location='/one_pixel'" value="ein pixel"/>
-        <p></p>
-        <p></p>
-        <p>The current MODE is <i>{{MODE}}</i></p>
-
+        <p>
+            Bitte drücken Sie einen der Buttons, um die LED-Lichterkette anzusteuern oder die kleine grüne LED auf dem Raspberry Pi Pico an bzw. aus zu schalten.
+        </p>
+        <p>
+            Der letzte MODUS war <i>{{MODE}}</i>
+        </p>
+        <p>
+            <input type="button" onclick="document.location='/ledon'" value="Grüne LED an"/>&nbsp;&nbsp;&nbsp;<input type="button" onclick="document.location='/ledoff'" value="Grüne LED aus"/>
+        </p>
+        <p><br/></p>
+        <p>
+            <input type="button" onclick="document.location='/blinker'" value="Blinker"/>
+            <br/><br/>
+            <input type="button" onclick="document.location='/audi_blinker'" value="Audi Blinker"/>
+            <br/><br/>
+            <input type="button" onclick="document.location='/audi_blinker2'" value="Audi Blinker 2"/>
+            <br/><br/>
+            <input type="button" onclick="document.location='/audi_blinker3'" value="Audi Blinker 3"/>
+            <br/><br/>
+            <input type="button" onclick="document.location='/vierfarben_audiblinker'" value="4-farbiger Audi Blinker"/>
+        </p>
+        <p><br/></p>
+        <p>
+            <input type="button" onclick="document.location='/all_colors'" value="Alle Farben"/>
+            <br/><br/>
+            <input type="button" onclick="document.location='/rotate_right'" value="Rotieren nach rechts"/>
+            <br/><br/>
+            <input type="button" onclick="document.location='/move_right_left'" value="rechts links bewegen"/>
+            <br/><br/>
+            <input type="button" onclick="document.location='/gradient_bounce'" value="Farbverlaufs-Wippe"/>
+            <br/><br/>
+            <input type="button" onclick="document.location='/one_pixel'" value="ein pixel"/>
+        </p>
 
     </div>
     

@@ -10,7 +10,7 @@ my_ip = connect_to_wifi(ssid, password)
 
 led = Pin("LED", Pin.OUT)
 led.off()
-mode_text = "OFF"
+mode_text = "---"
 
 @server.route("/")
 def index(request):
@@ -20,14 +20,14 @@ def index(request):
 @server.route("/ledon")
 def index(request):
     # LED anschalten
-    mode_text = "LED ON"
+    mode_text = "grüne LED an"
     led.on()
     return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
 
 @server.route("/ledoff")
 def index(request):
     # LED ausschalten
-    mode_text = "LED OFF"
+    mode_text = "grüne LED aus"
     led.off()
     return render_template("index.html", name="Mark Rosa", title="Lichterkettensteuerung", MODE=mode_text)
 
@@ -118,6 +118,7 @@ def my_catchall(request):
 logging.info("Started Webserver on IP-Address: ", my_ip)
 
 server.run()
+
 
 
 
