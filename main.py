@@ -1,5 +1,6 @@
 from phew import logging, server, connect_to_wifi
 from phew.template import render_template
+# in der Datei secret.py sind die Anmeldeinformationen des WLAN hinterlegt
 from secret import ssid, password
 from machine import Pin
 from examples import blinker, audi_blinker, audi_blinker2, audi_blinker3, vierfarben_audiblinker, all_colors, rotate_right, move_right_left, gradient_bounce, one_pixel
